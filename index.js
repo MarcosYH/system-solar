@@ -14,17 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const loader = document.querySelector(".loader");
+const modelViewer = document.querySelector("model-viewer");
+const loader = document.getElementById("loader");
 
-  setTimeout(() => {
-    loader.classList.add("hidden");
-    loader.addEventListener(
-      "transitionend",
-      () => {
-        loader.style.display = "none";
-      },
-      { once: true }
-    );
-  }, 3000); 
+modelViewer.addEventListener("load", () => {
+  loader.style.display = "none";
 });
