@@ -18,7 +18,7 @@ body {
   a {
     display: inline-block;
     font-size: 20px;
-    background-color: #76b8f5;
+    background-color: #76b8f5 !important;
     color: #000;
     border-radius: 36px;
     padding: 1.4rem 1.3rem;
@@ -188,5 +188,84 @@ label {
 
   main {
     display: none !important;
+  }
+}
+
+/* Loader */
+:root {
+  --loader-color: #fff;
+  --loader-size: 14.6rem;
+  --loader-offset: 1.7rem;
+  --loader-timing: ease-in-out;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #17063c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.loader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader::before,
+.loader::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: var(--loader-timing);
+  filter: drop-shadow(
+    0 0 calc(var(--loader-offset) / 2.25) rgba(255, 255, 255, 0.75)
+  );
+}
+
+.loader::before {
+  width: var(--loader-size);
+  height: var(--loader-size);
+  box-shadow: inset 0 0 0 var(--loader-offset) var(--loader-color);
+  animation-name: pulsA;
+}
+
+.loader::after {
+  width: calc(var(--loader-size) - var(--loader-offset) * 2);
+  height: calc(var(--loader-size) - var(--loader-offset) * 2);
+  box-shadow: 0 0 0 0 var(--loader-color);
+  animation-name: pulsB;
+}
+
+@keyframes pulsA {
+  0% {
+    box-shadow: inset 0 0 0 var(--loader-offset) var(--loader-color);
+    opacity: 1;
+  }
+  50%,
+  100% {
+    box-shadow: inset 0 0 0 0 var(--loader-color);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsB {
+  0%,
+  50% {
+    box-shadow: 0 0 0 0 var(--loader-color);
+    opacity: 0;
+  }
+  100% {
+    box-shadow: 0 0 0 var(--loader-offset) var(--loader-color);
+    opacity: 1;
   }
 }

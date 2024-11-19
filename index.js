@@ -13,3 +13,18 @@ document.addEventListener("DOMContentLoaded", function () {
     stagger: 0.1,
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const loader = document.querySelector(".loader");
+
+  setTimeout(() => {
+    loader.classList.add("hidden");
+    loader.addEventListener(
+      "transitionend",
+      () => {
+        loader.style.display = "none";
+      },
+      { once: true }
+    );
+  }, 3000); 
+});
