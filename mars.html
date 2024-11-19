@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="./index.js"></script>
+  <title>Mars</title>
+</head>
+
+<body>
+  <main class="bg-planete">
+    <div class=" container">
+      <a href="/systeme.html">
+        <img src="./img/arrow.svg" alt="arrow">
+      </a>
+      <h2>Mars</h2>
+      <div class=" row my-4">
+        <div class="col">
+          <p class=" fs-3">
+            Mars is no place for the faint-hearted. It’s dry, rocky, and bitter cold. The fourth planet from the Sun,
+            Mars is one of
+            Earth's two closest planetary neighbors (Venus is the other). Mars is one of the easiest planets to spot in
+            the night
+            sky – it looks like a bright red point of light.
+            Despite being inhospitable to humans, robotic explorers – like NASA's Perseverance Rover– are serving as
+            pathfinders to
+            eventually get humans to the surface of the Red Planet.
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <model-viewer class="planete-3d" src="./img/3D/mars.glb" alt="Mercury 3D model" auto-rotate
+            camera-controls></model-viewer>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Distance from the sun:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">146 million mi</label>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Average temperature:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">-80 degrees F</label>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Radius:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">2,106 mi</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

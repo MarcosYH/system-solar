@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="./index.js"></script>
+  <title>Neptune</title>
+</head>
+
+<body>
+  <main class="bg-planete">
+    <div class=" container">
+      <a href="/systeme.html">
+        <img src="./img/arrow.svg" alt="arrow">
+      </a>
+      <h2>Neptune</h2>
+      <div class=" row my-4">
+        <div class="col">
+          <p class=" fs-3">
+            Dark, cold, and whipped by supersonic winds, ice giant Neptune is the eighth and most distant planet in our
+            solar
+            system. More than 30 times as far from the Sun as Earth, Neptune is the only planet in our solar system not
+            visible to
+            the naked eye. In 2011 Neptune completed its first 165-year orbit since its discovery in 1846.
+            Neptune is so far from the Sun that high noon on the big blue planet would seem like dim twilight to us. The
+            warm light
+            we see here on our home planet is roughly 900 times as bright as sunlight on Neptune.
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <model-viewer class="planete-3d" src="./img/3D/neptune.glb" alt="Mercury 3D model" auto-rotate
+            camera-controls></model-viewer>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Distance from the sun:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">2.8 billion mi</label>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Average temperature:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">-353 degrees F</label>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Radius:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">15,299 mi</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

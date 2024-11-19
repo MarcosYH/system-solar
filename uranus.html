@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="./index.js"></script>
+  <title>Uranus</title>
+</head>
+
+<body>
+  <main class="bg-planete">
+    <div class=" container">
+      <a href="/systeme.html">
+        <img src="./img/arrow.svg" alt="arrow">
+      </a>
+      <h2>Uranus</h2>
+      <div class=" row my-4">
+        <div class="col">
+          <p class=" fs-3">
+            The seventh planet from the Sun with the third largest diameter in our solar system, Uranus is very cold and
+            windy. The
+            ice giant is surrounded by 13 faint rings and 27 small moons as it rotates at a nearly 90-degree angle from
+            the plane of
+            its orbit. This unique tilt makes Uranus appear to spin sideways, orbiting the Sun like a rolling ball.
+            The first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William
+            Herschel,
+            although he originally thought it was either a comet or a star.
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <model-viewer class="planete-3d" src="./img/3D/uranus.glb" alt="Mercury 3D model" auto-rotate
+            camera-controls></model-viewer>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Distance from the sun:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">1.82 billion mi</label>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Average temperature:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">-320 degrees F</label>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Radius:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">15,759 mi</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

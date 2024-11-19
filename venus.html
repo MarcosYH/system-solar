@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="./index.js"></script>
+  <title>Venus</title>
+</head>
+
+<body>
+  <main class="bg-planete">
+    <div class=" container">
+      <a href="/systeme.html">
+        <img src="./img/arrow.svg" alt="arrow">
+      </a>
+      <h2>Venus</h2>
+      <div class=" row my-4">
+        <div class="col">
+          <p class=" fs-3">
+            Venus is the second planet from the Sun. It is a rocky planet with the densest atmosphere of all the rocky
+            bodies in the
+            Solar System, and the only one with a mass and size that is close to that of its orbital neighbour Earth.
+            Orbiting
+            inferiorly (inside of Earth's orbit), it appears in Earth's sky always close to the Sun, as either a
+            "morning star" or
+            an "evening star". While this is also true for Mercury, Venus appears much more prominently, since it is the
+            third
+            brightest object in Earth's sky after the Moon and the Sun, appearing brighter than any other star-like
+            classical planet
+            or any fixed star.
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <model-viewer class="planete-3d" src="./img/3D/venus.glb" alt="Mercury 3D model" auto-rotate
+            camera-controls></model-viewer>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Distance from the sun:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">66.9 million mi</label>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Average temperature:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">867 degrees F</label>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Radius:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">3,759 mi</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

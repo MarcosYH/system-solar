@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <!-- style css -->
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script src="./index.js"></script>
+  <title>Earth</title>
+</head>
+
+<body>
+  <main class="bg-planete">
+    <div class=" container">
+      <a href="/systeme.html">
+        <img src="./img/arrow.svg" alt="arrow">
+      </a>
+      <h2>Earth</h2>
+      <div class=" row my-4">
+        <div class="col">
+          <p class=" fs-3">
+            Earth—our home planet—is the only place we know of so far that’s inhabited by living things.
+            NASA uses the vantage point of space to increase our understanding of our home planet, improve lives, and
+            safeguard our
+            future. We monitor Earth’s vital signs from land, air and space with a fleet of satellites and ambitious
+            airborne and
+            ground-based observation campaigns. NASA develops new ways to observe and study Earth's interconnected
+            natural systems
+            with long-term data records. The agency freely shares this unique knowledge and works with institutions
+            around the
+            world.
+          </p>
+        </div>
+        <div class="col-lg-3">
+          <model-viewer class="planete-3d" src="./img/3D/earth.glb" alt="Mercury 3D model" auto-rotate
+            camera-controls></model-viewer>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Distance from the sun:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">92.3 million mi</label>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Average temperature:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">59 degrees F</label>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <label for="" class=" fs-4">Radius:</label>
+          <div class="caracteristique">
+            <img src="./img/star.svg" alt="star">
+            <label for="distance" class=" fs-4">3,958 mi</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
